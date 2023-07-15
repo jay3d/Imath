@@ -82,7 +82,7 @@ function(IMATH_DEFINE_LIBRARY libname)
       OUTPUT_NAME "${libname}${IMATH_LIB_SUFFIX}"
       RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
   )
-  add_library(${PROJECT_NAME}::${libname} ALIAS ${libname})
+  #add_library(${PROJECT_NAME}::${libname} ALIAS ${libname})
 
   install(TARGETS ${libname}
     EXPORT ${PROJECT_NAME}
